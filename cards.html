@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="uft-8">
+    <title>Карты</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="mycsscards.css" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header_inner">
+                <div class="logo">
+                    <img src="logo.png">
+                </div>
+                <nav class="nav">
+                    <a class='nav_link' href="index.html">Главная</a>
+                    <a class="nav_link" href="branches.html">Филиалы</a>
+                        <a class="nav_link" href="booking.html">Бронирование</a>
+                        <a class="nav_link" href="profile.html">Личный кабинет</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="info">
+        <ul class="info__list">
+            <li class="info__item">
+                <h1 class='unf'>Ваши привязанные карты:</h1>
+            </li>
+            <li class="info__item">
+                <h2 class='numb'>**** **** **** 3625</h2>
+                <img src='mir.png' class='mir'>
+            </li>
+            <li class="info__item">
+                <h2 class='akt'>Срок активности: 08/25</h2>
+            <li class='bttn1'>
+                <a href ='#openModal' class="btn1">Добавить карту</a>
+                <div id="openModal" class="modalDialog">
+                    <div>
+                     <a href="#close" title="Закрыть" class="close">X</a>
+                    <h2>Добавить карту</h2>
+                    <hr>                       
+                    <label for="number"><b>Номер карты</b></label>
+                    <input type="text" placeholder="Введите номер карты" name="number" required>
+                    <label for="imya"><b>Владелец карты</b></label>
+                    <input type="text" placeholder="Введите имя и фамилию" name="imya" required>                       
+                    <label for="srok"><b>Срок действия</b></label>
+                    <input type="text" placeholder="Введите срок действия" name="srok" required>
+                    <label for="cvv"><b>CVV/CVC</b></label>
+                    <input type="text" placeholder="Введите CVV/CVC" name="cvv" required>
+                    <a href ='#' class="btttn1">Добавить</a>  
+                    <hr>       
+                            </div>     
+                    </div>
+                    
+            </li>   
+        </ul>
+        <a href ='#' class="btn" input type="submit" onclick="return confirm('Вы уверены?')">Удалить карту</a>
+        
+        
+
+    </div>
+    <footer class='footer'>
+        <nav class="nav">
+            <a class="nav_link" href="branches.html">Филиалы</a>
+                        <a class="nav_link" href="booking.html">Бронирование</a>
+                        <a class="nav_link" href="profile.html">Личный кабинет</a>
+            <p>8 (800) 555-35-35</p>
+        </nav>
+    </footer>
